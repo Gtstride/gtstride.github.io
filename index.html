@@ -6,25 +6,66 @@
     <style>
       /* GLOBAL STYLES */
       a {
-        color: green;
+        color: #f00;
       }
 
       /* SOCIAL STYLES */
       .social-link {
+        /*background: rgba(150, 150, 150, 0.5);*/
         color: blue;
+        display: inline-block;
+        height: 36px;
       }
 
       /* BIO STYLES */
       .bio-box {
         border: 1px solid black;
+        font-size: 1em;
+        width: 50%x;
       }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-size: 62.5%;
+      }
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+
+      .bio-copy {
+        font-size: 1em;
+      }
+
+      .bio-copy a{
+        color: green;
+      }
+      /*BIO WRAPPER*/
+      .bio-wrapper {
+      }
+
+      /* HERO STYLES */
+    .full-hero {
+      background-color: #c7dbfc;
+      height: 50vh;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .show {
+      display: block;
+    }
     </style>
   </head>
   <body>
 
-    <h1 class="social-link">I'm an h1</h1>
+  <div class="full-hero hero-home">
+    <h1 class="social-link show">I'm an h1</h1>
 
-    <ul>
+    <ul class="social-link">
       <li>
         <a href="http://example.com/">Link</a>
       </li>
@@ -35,9 +76,11 @@
         <a href="http://example.com/">Link</a>
       </li>
     </ul>
+  </div>
 
     <h2>I'm an h2</h2>
 
+    <div class="bio-wrapper">
     <div class="bio-box">
       <h3>Michael Hartl</h3>
       <a href="http://twitter.com/mhartl" class="social-link">here</a>
@@ -92,5 +135,6 @@
         The Future
       </p>
     </div>
+  </div>
   </body>
 </html>
